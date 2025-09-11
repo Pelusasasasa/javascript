@@ -6,6 +6,7 @@ import { demoComponent } from './concepts/demo'
 import { callbacksComponent } from './concepts/02-callbacks'
 import { promisesComponent } from './concepts/03-promises'
 import { promiseRaceComponent } from './concepts/04-promises-race'
+import { asyncComponent } from './concepts/05-async'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -23,4 +24,4 @@ document.querySelector('#app').innerHTML = `
 `
 const element = document.querySelector('.card');
 // callbacksComponent(element);
-promiseRaceComponent(element)
+asyncComponent(element);
